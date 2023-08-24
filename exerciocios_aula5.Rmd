@@ -1,0 +1,52 @@
+---
+title: "Untitled"
+output: html_document
+date: "2023-08-24"
+---
+
+Para os dados de USArrests faça o que se pede.
+
+```         
+Imprima na tela as 9 primeiras observações.
+Imprima as últimas 3 observações.
+Quantas observações temos?
+Quantas variáveis temos?
+Apresente o sumário dos dados.
+Apresente a estrutura dos dados.
+Indique os estados cujo número de Murder está entre 10 e 15.
+Qual a média de Assault para os estados cuja variável Rape está no IQR (
+```
+```{r}
+
+data("USArrests")
+View(USArrests)
+?USArrests
+```
+
+```{r}
+head(USArrests, n = 9)
+
+```
+
+```{r}
+tail(USArrests, n = 3)
+```
+
+```{r}
+nrow(USArrests)
+```
+
+```{r}
+ncol(USArrests)
+```
+```{r}
+summary(USArrests)
+```
+
+
+```{r}
+
+subset(USArrests, Murder >= 10 & Murder <= 15, select = "Murder")
+
+```
+
