@@ -1,2 +1,3 @@
 .Rproj.user
-CDC_PRAMStat_Data_for_2004.csv
+*.csv
+*.zip
